@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>FirstSelenide</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+
+    <properties>
+        <junit.jupiter.version>5.7.0</junit.jupiter.version>
+        <qameta.allure>2.13.6</qameta.allure>
+        <allure.version>2.10.0</allure.version>
+        <commons-io>2.4</commons-io>
+        <org.aeonbits.owner.version>1.0.4</org.aeonbits.owner.version>
+        <selenide.version>6.1.1</selenide.version>
+        <cucumber-junit.version>5.7.0</cucumber-junit.version>
+        <allure-cucumber5>2.17.3</allure-cucumber5>
+        <allure-maven>2.11.2</allure-maven>
+        <org.apache.maven.plugins>3.8.1</org.apache.maven.plugins>
+        <maven-surefire-plugin>2.12.4</maven-surefire-plugin>
+        <aspectjweaver>1.9.9</aspectjweaver>
+        <version-jdk>17</version-jdk>
+        <encoding>UTF-8</encoding>
+        <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+        <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
+        <archetype.encoding>${encoding}</archetype.encoding>
+    </properties>
+
+    <dependencies>
+        <!-- Test API(s) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Parameterized Tests -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Test engine(s) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${qameta.allure}</version>
+        </dependency>
+
+        <!--Для скринов-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io}</version>
+        </dependency>
+
+        <!-- Для пропертей -->
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${org.aeonbits.owner.version}</version>
+        </dependency>
+
+        <!-- Selenide -->
+
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
+        </dependency>
+
+        <!-- Cucumber -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber-junit.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-junit.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber-junit.version}</version>
+        </dependency>
+
+        <!-- ALLURE -->
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-cucumber5-jvm</artifactId>
+                <version>${allure-cucumber5}</version>
+            </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.0-alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.0-alpha1</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure-maven}</version>
+                <configuration>
+                    <resultsDirectory>${basedir}/allure-results</resultsDirectory>
+                    <reportDirectory>${basedir}/target/allure-reports</reportDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${org.apache.maven.plugins}</version>
+                <configuration>
+                    <source>${version-jdk}</source>
+                    <target>${version-jdk}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin}</version>
+                <configuration>
+                    <skipTests>false</skipTests>
+                    <includes>
+                        <include>**/*Tests.java</include>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver}/aspectjweaver-${aspectjweaver}.jar"
+                    </argLine>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectjweaver}</version>
+                    </dependency>
+                </dependencies>
+
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

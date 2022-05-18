@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="2" name="Test" time="70.035" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\jdk-17.0.2\bin"/>
+    <property name="maven.wagon.http.ssl.insecure" value="true"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\dmitr\Desktop\Cucumber Task"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\dmitr\Desktop\Cucumber Task"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\dmitr\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-17\jdk-17.0.2\bin;C:\Program Files\Prorgramm\Allure\allure-commandline-2.17.3\allure-2.17.3\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\dmitr\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skipTests" value="true"/>
+    <property name="os.version" value="10.0"/>
+    <property name="maven.wagon.http.ssl.allowall" value="true"/>
+    <property name="user.home" value="C:\Users\dmitr"/>
+    <property name="user.timezone" value="Asia/Tomsk"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="dmitr"/>
+    <property name="java.class.path" value="C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.3 -DskipTests=true install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17\jdk-17.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Prorgramm\Intellij Idea\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Проверка яндекс маркет" name="EMPTY_NAME" time="23.467">
+    <failure message="В списке есть товар с другим названием" type="java.lang.AssertionError">java.lang.AssertionError: В списке есть товар с другим названием
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.YandexMarket.checkItems(YandexMarket.java:85)
+	at stepDefinitions.StepDef.checkItems(StepDef.java:35)
+	at ✽.проверить, что все товары в списке от &apos;iPhone&apos; и закрываем браузер(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:10)
+</failure>
+    <system-out>
+@run
+Scenario Outline:                                                         &amp;#27;[90m# src/test/java/feature/testFile.feature:14&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� ������� � ����� � ���������� &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;������ ������&apos;&amp;#27;[0m               &amp;#27;[90m# stepDefinitions.StepDef.Search(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� �� ������ &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;������.������ � ������� � ������� ���������&apos;&amp;#27;[0m    &amp;#27;[90m# stepDefinitions.StepDef.crossLink(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� � ������ &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;�����������&apos;&amp;#27;[0m&amp;#27;[32m,&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;���������&apos;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.StepDef.searchSelection(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m��������� ������ ������������� &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Apple&apos;&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.StepDef.filterProducer(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m��������� ���������� ������� &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m12&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.StepDef.filterProducer(int)&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31m���������, ��� ��� ������ � ������ �� &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&apos;iPhone&apos;&amp;#27;[0m&amp;#27;[31m � ��������� �������&amp;#27;[0m &amp;#27;[90m# stepDefinitions.StepDef.checkItems(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: � ������ ���� ����� � ������ ���������
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.YandexMarket.checkItems(YandexMarket.java:85)
+	at stepDefinitions.StepDef.checkItems(StepDef.java:35)
+	at ?.���������, ��� ��� ������ � ������ �� &apos;iPhone&apos; � ��������� �������(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:10)
+&amp;#27;[0m
+</system-out>
+    <system-err>[main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let&apos;s create a new webdriver
+[main] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\dmitr\Desktop\Cucumber Task\build\downloads\1648350053617_13200_1
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dmitr\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 53737
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 27, 2022 10:00:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 27, 2022 10:00:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 27, 2022 10:00:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+[main] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed connectTimeout from PT10S to PT10S
+[main] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed readTimeout from PT3M to PT3M
+[main] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=99.0.4844.84 Platform=WINDOWS
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.1.1
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.1.0 build revision: 87802e897b
+[main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (5fc17e9ccb41d6d4f46824b7f7ca91ef)
+</system-err>
+  </testcase>
+  <testcase classname="Проверка яндекс маркет" name="EMPTY_NAME" time="46.568">
+    <failure message="Установить количество элементов невозможно, нет кнопки количества элементов c этим именем производителя" type="java.lang.AssertionError">java.lang.AssertionError: Установить количество элементов невозможно, нет кнопки количества элементов c этим именем производителя
+	at org.junit.Assert.fail(Assert.java:89)
+	at pages.YandexMarket.SelectCountOfItems(YandexMarket.java:64)
+	at stepDefinitions.StepDef.filterProducer(StepDef.java:31)
+	at ✽.поставить количество страниц 12(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:9)
+</failure>
+    <system-out>
+@run
+Scenario Outline:                                                         &amp;#27;[90m# src/test/java/feature/testFile.feature:15&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� ������� � ����� � ���������� &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;������ ������&apos;&amp;#27;[0m               &amp;#27;[90m# stepDefinitions.StepDef.Search(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� �� ������ &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;������.������ � ������� � ������� ���������&apos;&amp;#27;[0m    &amp;#27;[90m# stepDefinitions.StepDef.crossLink(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m������� � ������ &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;�����������&apos;&amp;#27;[0m&amp;#27;[32m,&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;���������&apos;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.StepDef.searchSelection(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32m��������� ������ ������������� &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;Lenovo&apos;&amp;#27;[0m                            &amp;#27;[90m# stepDefinitions.StepDef.filterProducer(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31m��������� ���������� ������� &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m12&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.StepDef.filterProducer(int)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: ���������� ���������� ��������� ����������, ��� ������ ���������� ��������� c ���� ������ �������������
+	at org.junit.Assert.fail(Assert.java:89)
+	at pages.YandexMarket.SelectCountOfItems(YandexMarket.java:64)
+	at stepDefinitions.StepDef.filterProducer(StepDef.java:31)
+	at ?.��������� ���������� ������� 12(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:9)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36m���������, ��� ��� ������ � ������ �� &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&apos;Lenovo&apos;&amp;#27;[0m&amp;#27;[36m � ��������� �������&amp;#27;[0m &amp;#27;[90m# stepDefinitions.StepDef.checkItems(java.lang.String)&amp;#27;[0m
+</system-out>
+    <system-err>[main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Webdriver has been closed meanwhile. Let&apos;s re-create it.
+[main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -&gt; ChromeDriver: chrome on WINDOWS (5fc17e9ccb41d6d4f46824b7f7ca91ef)...
+[main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 228 ms
+[main] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\dmitr\Desktop\Cucumber Task\build\downloads\1648350076761_13200_1
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 54951
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 27, 2022 10:01:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 27, 2022 10:01:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
+Mar 27, 2022 10:01:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 96
+[main] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed connectTimeout from PT10S to PT10S
+[main] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed readTimeout from PT3M to PT3M
+[main] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=99.0.4844.84 Platform=WINDOWS
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.1.1
+[main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.1.0 build revision: 87802e897b
+[main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (d6da1c57240a9a282b4eabd9e1d20fc9)
+</system-err>
+  </testcase>
+</testsuite>

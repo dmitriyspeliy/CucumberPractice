@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: Test
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 71.641 sec <<< FAILURE!
+EMPTY_NAME(Проверка яндекс маркет)  Time elapsed: 23.467 sec  <<< FAILURE!
+java.lang.AssertionError: В списке есть товар с другим названием
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.YandexMarket.checkItems(YandexMarket.java:85)
+	at stepDefinitions.StepDef.checkItems(StepDef.java:35)
+	at ✽.проверить, что все товары в списке от 'iPhone' и закрываем браузер(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:10)
+
+EMPTY_NAME(Проверка яндекс маркет)  Time elapsed: 46.568 sec  <<< FAILURE!
+java.lang.AssertionError: Установить количество элементов невозможно, нет кнопки количества элементов c этим именем производителя
+	at org.junit.Assert.fail(Assert.java:89)
+	at pages.YandexMarket.SelectCountOfItems(YandexMarket.java:64)
+	at stepDefinitions.StepDef.filterProducer(StepDef.java:31)
+	at ✽.поставить количество страниц 12(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:9)
+

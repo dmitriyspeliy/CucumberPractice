@@ -1,0 +1,313 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-27T03:08:15.656Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4800538700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.openBr()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "",
+        "description": "",
+        "id": "проверка-яндекс-маркет;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 75167300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 536123000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "открыть браузер и найти в поисковике \u0027Яндекс Маркет\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Яндекс Маркет\u0027",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.StepDef.Search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1234162200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "перейти по ссылке \u0027Яндекс.Маркет — покупки с быстрой доставкой\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Яндекс.Маркет — покупки с быстрой доставкой\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.StepDef.crossLink(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7628648100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "перейти в раздел \u0027Электроника\u0027,\u0027Смартфоны\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Электроника\u0027",
+                  "offset": 17
+                },
+                {
+                  "val": "\u0027Смартфоны\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDef.searchSelection(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1935528100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "поставить фильтр производителя \u0027Apple\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Apple\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDef.filterProducer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4798889900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "поставить количество страниц 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.StepDef.filterProducer(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19263389300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "проверить, что все товары в списке от \u0027iPhone\u0027 и закрываем браузер",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027iPhone\u0027",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.StepDef.checkItems(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-27T03:08:56.301Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2899459400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.openBr()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "проверка-яндекс-маркет;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 20986900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 155380600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "открыть браузер и найти в поисковике \u0027Яндекс Маркет\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Яндекс Маркет\u0027",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.StepDef.Search(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1062277300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "перейти по ссылке \u0027Яндекс.Маркет — покупки с быстрой доставкой\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Яндекс.Маркет — покупки с быстрой доставкой\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.StepDef.crossLink(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7899316700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "перейти в раздел \u0027Электроника\u0027,\u0027Смартфоны\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Электроника\u0027",
+                  "offset": 17
+                },
+                {
+                  "val": "\u0027Смартфоны\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDef.searchSelection(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1918473700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "поставить фильтр производителя \u0027Lenovo\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Lenovo\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.StepDef.filterProducer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Установить количество элементов невозможно, нет кнопки количества элементов c этим именем производителя\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat pages.YandexMarket.SelectCountOfItems(YandexMarket.java:64)\r\n\tat stepDefinitions.StepDef.filterProducer(StepDef.java:31)\r\n\tat ✽.поставить количество страниц 12(file:///C:/Users/dmitr/Desktop/Cucumber%20Task/src/test/java/feature/testFile.feature:9)\r\n",
+              "duration": 32446803600,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "поставить количество страниц 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.StepDef.filterProducer(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "проверить, что все товары в списке от \u0027Lenovo\u0027 и закрываем браузер",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Lenovo\u0027",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.StepDef.checkItems(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      }
+    ],
+    "name": "Проверка яндекс маркет",
+    "description": "",
+    "id": "проверка-яндекс-маркет",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/testFile.feature",
+    "tags": []
+  }
+]
